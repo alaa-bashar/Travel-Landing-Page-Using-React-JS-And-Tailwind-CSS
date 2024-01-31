@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@layer base {
+  :root {
+    --primary-dark: #5651e5;
+    --primary-light: #789dff;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply font-[Poppins];
+  }
+
+  li {
+    @apply p-4 cursor-pointer;
+  }
+
+  h1,
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  nav {
+    @apply flex justify-between items-center h-20 px-4 absolute z-50 w-full drop-shadow-lg;
+  }
+
+  .nav-icon {
+    @apply size-5 m-1;
+  }
+
+  button {
+    @apply p-3 mt-1 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+  }
+
+  .nav-menu li {
+    @apply border-b-2;
+  }
+
+  section {
+    @apply max-w-[1240px] mx-auto my-20 px-4;
+  }
+
+  .resorts img {
+    @apply w-full h-full object-cover;
+  }
+}
